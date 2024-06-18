@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <input 
+            type="search" 
+            placeholder="Search products..."
+            onchange="searchProducts(event)"
+        > 
+    </nav>
+    <main id="root" class="main"></main>
+    <footer>
+        <div class="add-product-form">
+            <h2>Add New Product</h2>
+            <input type="text" id="productTitle" placeholder="Product Title">
+            <input type="text" id="productThumbnail" placeholder="Thumbnail URL">
+            <input type="number" id="productPrice" placeholder="Price">
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
